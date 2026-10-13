@@ -95,3 +95,8 @@ test.only('Delete Request in API Testing',async({request})=>{
 //git config --global user.email "sanjanamartin27@gmail.com"
 //git init  Initialized
 //git status : check file
+//git add . :add files
+//git commit -m "Initial Commit"
+//git remote add origin https://github.com/sanjanamartin27-create/demoPlaywrightProject.git
+//git branch (master)====>>> git branch -M main (main)
+//git push -u origin main  (to push)
