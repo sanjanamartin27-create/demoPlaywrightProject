@@ -87,8 +87,7 @@ test.only('Delete Request in API Testing',async({request})=>{
 
 //Assignment
 // Create login.spec.js create 4 testcases: username pass valid and invalid combo
-//11 next: excel , retry mech,workers,bdd,jenkins,gitpush,codegen,copilot,allure report,Interview qa,
-// faker,file upload download,custom fixture
+
 
 
 //git config --global user.name "Sanjana"
@@ -100,3 +99,46 @@ test.only('Delete Request in API Testing',async({request})=>{
 //git remote add origin https://github.com/sanjanamartin27-create/demoPlaywrightProject.git
 //git branch (master)====>>> git branch -M main (main)
 //git push -u origin main  (to push)
+
+
+//In future if any changes in files use these (already pushed)
+//git add . :add files
+//git commit -m "Initial Commit"
+//git push
+
+
+
+//19th mon in canada extended class
+//DONE:
+//WORKERS: Parallel execution eg 3 test 3 workers //run mult tests in parallel
+//retry mech: flaky testcases : except mistakes in scripts,...eg:internet stability,system related->re execute:pass=>retry mechanism eg give 2
+//codegen: record and generate script (cant find uniq locator,use: to understand)
+//copilot: //limit, paid 
+// excel read: call data from excel-> json   (excel need to convert to json structure)
+//faker predefined class: generate random data eg: name,email,ph,city,zip,company,credit card,random number,random string npm install @faker-js/faker
+
+// bdd: Behavior Driven Development: plain english text -Gherkin syntax,framework cucumber 
+//install cucumber: npm install @cucumber/cucumber (1.feature file(Gherkin syntax),step defenition file)()
+
+//BDD keywords: 1.Feature: functionality being tested, 2.Scenario: describes test case
+//3.Given: precondition(initial condition/setup), 4.When: action performed by user, 5.Then: expected result, 6.And: additional step/action
+
+//allure report: Reporting tool , install packages: npm install -D allure-playwright, npm install -D allure-commandline,html report generation:npx allure generate allure-results --clean
+//to open allure report: npx allure open allure-report // open/serve 
+
+//Hooks: block of code executed at specific points during the test execution 
+// Types:
+// 1. Beforeall: once before all scenarios 
+// 2.Afterall:once after all scenarios
+//3.before:before every scenario
+//4.after:after every scenario
+//5.before step (steps given when then)
+//6.After step
+
+//Pending topics:jenkins,,Interview qa,,file upload,custom fixture
+//BDD Tags: label
+
+//Assignment:
+// push code to github, download jenkins, git vs gihub-install git locally, java 
+
+

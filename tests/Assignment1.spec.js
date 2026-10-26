@@ -60,7 +60,7 @@ test('Radio button single and group Demo page',async({page})=>{
 
 
 
-test.only('Select Input Demo page', async({page})=>{
+test('Select Input Demo page', async({page})=>{
     await page.goto('https://selenium.qabible.in/select-input.php')
     const selectColor=page.locator('#single-input-field')
     await selectColor.selectOption({value:'Red'})

@@ -1,11 +1,15 @@
 import{test,expect} from '@playwright/test'
 import { LoginPage } from '../pages/loginPage'
-import testData from '../utils/testData.json' //testData.key
+import testData from '../utils/testData.json' with {type:'json'}
+import { readExcelFile } from '../utils/excelRead.js' //importing excelRead.js file
+import {faker} from '@faker-js/faker' //importing faker module
 // Valid login using valid username and password
 
-test.only('Login using valid username and password',async({page})=>{
-    const usernameValue=testData.validusername
-    const passwordValue=testData.validpassword
+test('Login using valid username and password',async({page})=>{
+    // const usernameValue=testData.validusername
+    // const passwordValue=testData.validpassword
+    const usernameValue=readExcelFile(3,1) //row 2 col 1
+    const passwordValue=readExcelFile(3,2) //row 2 col 2
     const login=new LoginPage(page) //constructor invoking
     await login.navigateToApplication()
     await login.fillUsernameOnUsernameField(usernameValue)
@@ -18,8 +22,10 @@ test.only('Login using valid username and password',async({page})=>{
 // Invalid login using invalid username and password
 
 test('Login using invalid username and invalid password',async({page})=>{
-    const usernameValue=testData.invalidUsername
-    const passwordValue=testData.invalidPassword
+    const usernameValue=faker.person.fullName()
+    const passwordValue=faker.internet.password()   //faker: for invalid data generation, npm install @faker-js/faker
+   // const usernameValue=testData.invalidUsername
+   // const passwordValue=testData.invalidPassword
     const login=new LoginPage(page) //constructor invoking
     await login.navigateToApplication()
     await login.fillUsernameOnUsernameField(usernameValue)
@@ -30,7 +36,7 @@ test('Login using invalid username and invalid password',async({page})=>{
 
 //Invalid username and valid password
 
-test('Login using invalid username and valid password',async({page})=>{
+test.only('Login using invalid username and valid password',async({page})=>{
     const usernameValue=testData.invalidUsername
     const passwordValue=testData.validpassword
     const login=new LoginPage(page) //constructor invoking

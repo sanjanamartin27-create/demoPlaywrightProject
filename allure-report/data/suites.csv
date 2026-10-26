@@ -1,0 +1,2 @@
+"DESCRIPTION","DURATION IN MS","NAME","PARENT SUITE","START TIME","STATUS","STOP TIME","SUB SUITE","SUITE","TEST CLASS","TEST METHOD"
+"","2491","Login using invalid username and valid password","chromium","2026-10-19","passed","2026-10-19","","login.spec.js","",""
