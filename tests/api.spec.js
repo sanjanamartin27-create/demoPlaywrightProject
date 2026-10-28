@@ -135,10 +135,11 @@ test.only('Delete Request in API Testing',async({request})=>{
 //5.before step (steps given when then)
 //6.After step
 
-//Pending topics:jenkins,,Interview qa,,file upload,custom fixture
+//Pending topics:,,Interview qa,,file upload,jenkins continue
+
 //BDD Tags: label
 
 //Assignment:
-// push code to github, download jenkins, git vs gihub-install git locally, java 
-
-
+// push code to github>>>>, download jenkins, git vs gihub-install git locally, java 
+//jenkins:CI/CD tool - 
+//custom fixture: eg page.. 
